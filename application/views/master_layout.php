@@ -24,6 +24,10 @@
 		{
 			width: 100%;
 		}
+		form
+		{
+			margin: 0;
+		}
 		#top-bar.white
 		{
 			background-color: #FFF !important;
@@ -58,15 +62,12 @@
 			background-color: transparent;
 			border: none;
 			margin: 0;
+			background-image: none;
+			box-shadow: none;
 		}
-		/*#top-menu ul
-		{
-			float: right;
-		}*/
 		#top-menu ul li a{
 			padding: 15px 20px;
 			font-size: 11px;
-			float: right;
 			color: #FFF;
 		}
 		#top-menu ul li.active a
@@ -76,11 +77,10 @@
 			background-color: transparent;
 		}
 		#top-menu ul li:hover a{
-			text-decoration: underline;
+			text-decoration: none;
 		}
 		#top-menu ul li{
 			background-color: transparent;
-			float: right;
 		}
 		#top-menu .container-fluid
 		{
@@ -196,6 +196,33 @@
 			bottom: 0;
 			font-family: lato;
 		}
+		.hover-underline
+		{
+			position: relative;
+			line-height: 1.125rem;
+			display: inline-block;
+			padding-bottom: 8px;
+			cursor: hand;
+			cursor: pointer;
+			font-weight: bold;
+			color: #000;
+		}
+		.hover-underline:before,
+		.hover-underline:after
+		{
+			content: '';
+			position: absolute;
+			bottom: 0;
+			width: 0;
+			height: 0.1875rem;
+			transition: width 0.2s cubic-bezier(0.4,0,1,1);
+			background-color: #000;
+
+		}
+		.hover-underline:hover::before
+		{
+			width: 100%;
+		}
 		@media (max-width: 1200px) {
 			  .navbar-header {
 			      float: none;
@@ -260,8 +287,105 @@
 			scroll-behavior: smooth;
 		}
 	</style>
+	<style type="text/css">
+		@keyframes rotate {
+		    from {transform: rotate(0deg);}
+		    to {transform: rotate(360deg);}
+		}
+		#loader
+		{
+			position: fixed;
+			left: 0px;
+			top: 0px;
+			width: 100%;
+			height: 100%;
+			z-index: 99999999;
+			background: #141414;
+		}
+		#loader-img
+		{
+			animation-name: rotate;
+			animation-duration: 1s;
+			animation-iteration-count: infinite;
+			animation-timing-function: linear;
+		}
+		img[alt='www.000webhost.com']
+		{
+			display: none !important;
+		}
+	</style>
+	<style type="text/css">
+		#sequence
+		{
+			position: relative;
+			width: 100%;
+			max-width: 100%;
+			min-height: 1200px;
+			margin: 0 auto;
+			padding: 0;
+			overflow: hidden;
+			overflow-y: auto;
+		}
+		#sequence .seq-canvas,
+		#sequence .seq-canvas > *
+		{
+			position: relative;
+			margin: 0;
+			padding: 0;
+			list-style: none;
+		}
+		#sequence .seq-canvas
+		{
+			position: absolute;
+			height: 100%;
+			width: 100%;
+			white-space: nowrap;
+		}
+		#sequence .seq-canvas > *
+		{
+			display: inline-block;
+			vertical-align: top;
+			width: 100%;
+			height: 100%;
+			white-space: normal;
+			text-align: center;
+		}
+		#sequence .seq-canvas > li:before
+		{
+			content: '';
+			display: inline-block;
+			vertical-align: middle;
+			height: 100%;
+		}
+		#sequence li > *
+		{
+			display: inline-block;
+			vertical-align: top;
+			width: 100%;
+		}
+	</style>
+	<style type="text/css">
+		#top-bar.white #top-menu ul li:not(.active) a:hover
+		{
+			color: #FFF !important;
+		}
+	</style>
+	<script type="text/javascript" src="<?php echo base_url(); ?>assets/js/jquery.min.js"></script>
+	<script type="text/javascript" src="<?php echo base_url(); ?>assets/js/modernizr.js"></script>
+	<script type="text/javascript">
+		$(window).load(function() {
+		$('#loader').fadeOut('slow',function(){$(this).remove();});
+	});
+	</script>
 </head>
 <body>
+	<div id='loader' style='text-align: center; display: table;'>
+		<div style='display: table-cell; vertical-align: middle;'>
+			<p><img src="<?php echo base_url(); ?>assets/img/s_a_l.png" style='height: 25vh'></p>
+			<p style='color: #FFF;'>DOCPRO Business Solutions</p>
+			<p id='loader-img'><img src="<?php echo base_url(); ?>assets/img/roll.png" style='height: 4vh'></p>
+		</div>
+	</div>
 	<div class='container'>
 		<div id='top-bar' class='row dark' style='top: 0; width: 100%; background-color: rgba(0, 0, 0, 0.29); position: fixed; z-index: 9999;'>
 			<div class='col-md-2'>
@@ -285,16 +409,19 @@
 
     				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style='padding-right: 0;'>
      					<ul class="nav navbar-nav">
+     						<li class="active"><a class='down' data-target='home' href="http://localhost:81#home">HOME</a></li>
+     						<li><a class='down' data-target='about' href="http://localhost:81#about">ABOUT</a></li>
+     						<li><a class='down' data-target='contact' href="http://localhost:81#contact">CONTACT</a></li>
         					<li><a target='_blank' href="http://cacac.com.ph/">CLEMENTE, AQUINO AND COMPANY</a></li>
-        					<li><a class='down' data-target='contact' href="<?php echo base_url(); ?>#contact">CONTACT</a></li>
-        					<li><a class='down' data-target='about' href="<?php echo base_url(); ?>#about">ABOUT</a></li>
-        					<li class="active"><a class='down' data-target='home' href="<?php echo base_url(); ?>#home">HOME</a></li>
+        					
+        					
+        					
       					</ul>
 
       					<ul class="nav navbar-nav navbar-right">
-						   	<li><a href="login">LOGIN</a></li>
-     						<li><a href="#">SUBSCRIBE</a></li>
-     						<li><a href="<?php echo base_url(); ?>accountingsystem">ACCOUNTING SYSTEM</a></li>
+      						<li><a href="http://localhost/docpro">ACCOUNTING SYSTEM</a></li>
+      						<li><a href="http://localhost/docpro/subscribe">SUBSCRIBE</a></li>
+						   	<li><a href="http://localhost/docpro/login">LOGIN</a></li>
 					  	</ul>
     				</div>
 				</nav>
@@ -304,7 +431,7 @@
 		<div class='row' style="background-image: url('assets/img/img-plate.png'); padding: 0; margin: 0; padding-bottom: 30px; width: 100%;"">
 			<div class='col-md-6' style='padding-top: 35px;'>
 				<div class='col-md-6' style='padding: 0;'>
-					<img src="<?php echo base_url(); ?>assets/img/s_a_l.png" style='height: 93px; margin-top: 10px; float: left; margin-left: 50px;'>
+					<a href="<?php echo base_url(); ?>#about"><img src="<?php echo base_url(); ?>assets/img/s_a_l.png" style='height: 93px; margin-top: 10px; float: left; margin-left: 50px;'></a>
 					<div style='padding-top: 30px;'>
 						<p style="font-family: 'Times New Roman', Georgia, Serif; font-size: 24px; font-weight: bolder; margin: 0; letter-spacing: 2px;">
 							<span style='color: #00189c;'>DOC</span><span style='color: #000'>PRO<span>
@@ -313,7 +440,7 @@
 					</div>
 				</div>
 				<div class='col-md-6' style='padding: 0;'>
-					<img src="<?php echo base_url(); ?>assets/img/cac.png" style='height: 35px; float: left; margin-top: 32px;'>
+					<a href="http://cacac.com.ph" target='_blank'><img src="<?php echo base_url(); ?>assets/img/cac.png" style='height: 35px; float: left; margin-top: 32px;'></a>
 				</div>
 			</div>
 			<div class='col-md-6'>
@@ -360,9 +487,11 @@
 			</div>
 		</div>
 	</div>
-
 	<script type="text/javascript" src="<?php echo base_url(); ?>libs/jquery.min.js"></script>
 	<script type="text/javascript" src="<?php echo base_url(); ?>libs/bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="<?php echo base_url(); ?>libs/sequence/imagesloaded.pkgd.min.js"></script>
+	<script type="text/javascript" src="<?php echo base_url(); ?>libs/sequence/hammer.min.js"></script>
+	<script type="text/javascript" src="<?php echo base_url(); ?>libs/sequence/sequence.min.js"></script>
 	<script>
 		$(window).scroll(function() {
 		   	if($(window).scrollTop() + 800 > $(document).height()) {

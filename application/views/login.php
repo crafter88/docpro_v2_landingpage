@@ -22,7 +22,7 @@
 					<td style='border: none; padding-top: 10px;'><button class='btn btn-primary' type='button' style='border-radius: 0; width: 100%;'>Login</button></td>
 				</tr>
 				<tr>
-					<td style='border: none; padding-top: 10px;'><a href="#" style='font-size: 12px;'>Forgot Password</a></td>
+					<td style='border: none; padding-top: 10px;'><a href="#" style='font-size: 12px;'>Forgot Password?</a></td>
 				</tr>
 			</table>
 		</div>

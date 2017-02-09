@@ -53,7 +53,8 @@ $route['default_controller'] = 'Master_Layout';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
-$route['accountingsystem'] 		= 'Master_Layout/system';
+$route['accountingsystem'] 			= 'Master_Layout/system';
 $route['about'] 					= 'Master_Layout/about';
 $route['contact'] 					= 'Master_Layout/contact';
+$route['subscribe'] 				= 'Master_Layout/subscribe';
 $route['login'] 					= 'Master_Layout/login';

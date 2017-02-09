@@ -23,6 +23,10 @@ class Master_Layout extends CI_Controller
 	{
 		$this->load->view('master_layout', ['content' => 'contact', 'footer_js' => 'contact_js']);
 	}
+	public function subscribe()
+	{
+		$this->load->view('master_layout', ['content' => 'subscribe', 'footer_js' => 'subscribe_js']);
+	}
 	public function login()
 	{
 		$this->load->view('master_layout', ['content' => 'login', 'footer_js' => 'login_js']);

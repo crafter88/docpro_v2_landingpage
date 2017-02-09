@@ -3,7 +3,7 @@
 		<div style='display: table-cell; vertical-align: middle'>
 			<h1 style="font-family: 'Times New Roman', Georgia, Serif; text-align: center; color: #FFF; font-size: 42px; margin-bottom: 0; width: 450px; background-color: #000; margin: 0 auto; padding-top: 10px;">DOCPRO</h1>
 			<p style='text-align: center; color: #FFF; width: 450px;background-color: #000; margin: 0 auto; padding-bottom: 10px;'>THE PERFECT ACCOUNTING SOLUTION TO YOUR BUSINESS</p>
-			<a class='btn btn-primary down' data-target='contact' href='#contact' style='display: table; margin: 0 auto; border: 0; border-radius: 0; font-size: 12px; padding: 10px 20px;'>CONTACT US</a>
+			<a class='btn btn-info down' data-target='contact' href='#contact' style='display: table; margin: 0 auto; border: 0; border-radius: 0; font-size: 12px; padding: 10px 20px;'>CONTACT US</a>
 		</div>
 		<a class='down' data-target='about' href="#about"><i class='fa fa-chevron-down caret-animated' style="color: #FFF; z-index: 99999; position: absolute; bottom: 30px; text-align: center; width: 95%; left: 40px; font-size: 30px;"></i></a>
 	</div>
@@ -18,6 +18,7 @@
 				<p style='text-align: center; font-size: 18px; line-height: 28px;'>
 					DocPro Business Solutions Inc. is a professional corporation committed in providing businesses and invdividuals with the highest quality outsourced accounting, tax services and business compliance delivered in a timely, efficient and innovative manner by a professional team that, clearly enjoys working together to exceed our clients’ needs.
 				</p>
+				<p class='hover-underline'>READ MORE</p>
 			</div>
 		</div>
 		
@@ -62,7 +63,7 @@
 	</div>
 </div>
 <div class='row'>
-	<div class='col-md-12' style='background-color: #00009b; color: #FFF;'><h1 style='margin: 0; padding: 20px; text-align: center;'>Contact Us</h1></div>
+	<div class='col-md-12' style='background-color: #00009b; color: #FFF;'><h1 style='margin: 0; padding: 20px; text-align: center; color: #FFF;'>Contact Us</h1></div>
 	<div class='col-md-7' style='padding-top: 10px; background-color: #141414; min-height: 428px;'>
 		<h4 style="color: #FFF; padding-left: 9px;">Send us your questions</h4>
 		<div style="max-height: 500px;">
@@ -75,7 +76,7 @@
 						<td style='border: none;'><textarea class='form-control' name='message' placeholder='Message' style='border-radius: 0; min-height: 40vh'></textarea></td>
 					</tr>
 				</table>
-				<button type='button' class='btn btn-primary' style='border-radius: 0; margin: 0 auto; display: table; width: 98%; background-color: #1000ff;'>SEND</button>
+				<button type='button' class='btn btn-info' style='border-radius: 0; margin: 0 auto; display: table; width: 98%; background-color: #1000ff;'>SEND</button>
 			</form>
 		</div>
 	</div>
