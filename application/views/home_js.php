@@ -3,10 +3,10 @@
             var height = $(window).scrollTop();
             if(height > 1)
             {
-              $('#top-bar').addClass('white');
-            	$('#top-bar').removeClass('dark');
+              $('#top-bar').addClass('dark');
+            	// $('#top-bar').removeClass('dark');
             }else{
-              $('#top-bar').removeClass('white');
+              // $('#top-bar').removeClass('dark');
             	$('#top-bar').addClass('dark');
             }
         });

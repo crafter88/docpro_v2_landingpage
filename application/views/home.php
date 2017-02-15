@@ -9,16 +9,16 @@
 	</div>
 </div>
 <div id='about' class='row about' style="background-image: url('assets/img/img-plate.png'); background-size: cover;">
-	<div class='col-md-12' style='padding-top: 50px; padding-bottom: 100px; text-align: center;'>
-		<div class='col-md-6 col-md-offset-3' style="background-color: #FFF;">
+	<div class='col-md-12' style="padding-top: 100px; padding-bottom: 100px; text-align: center; background-image: url('assets/img/pattern_about.png'); background-repeat: repeat; background-color: #000; height: 120%;">
+		<div class='col-md-6 col-md-offset-3' style='height: 120%;'>
 			<img src="<?php base_url(); ?>assets/img/s_a_l.png" style='height: 130px;'>
-			<h1 style="font-family: 'Times New Roman', Georgia, Serif; text-align: center; color: #00189c; margin-top: 0; font-weight: 600; font-size: 42px; margin-bottom: 0;"><span style='color: #00009b;'>DOC</span><span style='color: #000;'>PRO</span></h1>
-			<p style="width: 100%; text-align: center; color: #000; font-size: 18px; font-weight: 400;">Business Solutions</p>
-			<div style='background-color: #FFF; padding-top: 15px; padding-bottom: 15px;'>
-				<p style='text-align: center; font-size: 18px; line-height: 28px;'>
+			<h1 style="font-family: 'Times New Roman', Georgia, Serif; text-align: center; color: #00189c; margin-top: 0; font-weight: 600; font-size: 42px; margin-bottom: 0;"><span style='color: #00009b;'>DOC</span><span style='color: #FFF;'>PRO</span></h1>
+			<p style="width: 100%; text-align: center; color: #FFF; font-size: 18px; font-weight: 400; padding-bottom: 15px; border-bottom: 2px solid blue;">Business Solutions</p>
+			<div style='padding-top: 15px; padding-bottom: 15px; color: #FFF;'>
+				<p style='text-align: center; font-size: 20px; line-height: 32px;'>
 					DocPro Business Solutions Inc. is a professional corporation committed in providing businesses and invdividuals with the highest quality outsourced accounting, tax services and business compliance delivered in a timely, efficient and innovative manner by a professional team that, clearly enjoys working together to exceed our clients’ needs.
 				</p>
-				<p class='hover-underline'>READ MORE</p>
+				<p class='hover-underline' style='color: #FFF;'>READ MORE</p>
 			</div>
 		</div>
 		
@@ -63,8 +63,8 @@
 	</div>
 </div>
 <div class='row'>
-	<div class='col-md-12' style='background-color: #00009b; color: #FFF;'><h1 style='margin: 0; padding: 20px; text-align: center; color: #FFF;'>Contact Us</h1></div>
-	<div class='col-md-7' style='padding-top: 10px; background-color: #141414; min-height: 428px;'>
+	<div class='col-md-12' style="background-color: #000; color: #FFF; background-image: url('assets/img/pattern_about.png'); background-repeat: repeat;"><h1 style='margin: 0; padding: 40px; padding-top: 100px; text-align: center; color: #FFF; font-size: 28px;'>CONTACT US</h1></div>
+	<div class='col-md-7' style="padding-top: 10px; background-color: #000; min-height: 428px; padding-bottom: 100px; background-image: url('assets/img/pattern_about.png'); background-repeat: repeat; height: 100vh;">
 		<h4 style="color: #FFF; padding-left: 9px;">Send us your questions</h4>
 		<div style="max-height: 500px;">
 			<form>
@@ -80,7 +80,7 @@
 			</form>
 		</div>
 	</div>
-	<div class='col-md-5' style="padding-top: 10px; background-color: #141414; min-height: 428px;">
+	<div class='col-md-5' style="padding-top: 10px; background-color: #000; min-height: 428px; padding-bottom: 110px; background-image: url('assets/img/pattern_about.png'); background-repeat: repeat; height: 100vh;">
 		<h4 style='color: #FFF;'>Visit Us</h4>
 		<div id='map' style="height: 355px; width: 100%; margin-top: 18px;"></div>
 	</div>

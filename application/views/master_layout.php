@@ -72,9 +72,9 @@
 		}
 		#top-menu ul li.active a
 		{
-			color: blue;
+			color: #FFF;
 			font-weight: 900;
-			background-color: transparent;
+			/* background-color: transparent; */
 		}
 		#top-menu ul li:hover a{
 			text-decoration: none;
@@ -205,7 +205,7 @@
 			cursor: hand;
 			cursor: pointer;
 			font-weight: bold;
-			color: #000;
+			color: blue;
 		}
 		.hover-underline:before,
 		.hover-underline:after
@@ -216,7 +216,7 @@
 			width: 0;
 			height: 0.1875rem;
 			transition: width 0.2s cubic-bezier(0.4,0,1,1);
-			background-color: #000;
+			background-color: blue;
 
 		}
 		.hover-underline:hover::before
@@ -374,16 +374,16 @@
 	<script type="text/javascript" src="<?php echo base_url(); ?>assets/js/modernizr.js"></script>
 	<script type="text/javascript">
 		$(window).load(function() {
-		$('#loader').fadeOut('slow',function(){$(this).remove();});
-	});
+			//$('#loader').fadeOut('slow',function(){$(this).remove();});
+		});
 	</script>
 </head>
 <body>
 	<div id='loader' style='text-align: center; display: table;'>
 		<div style='display: table-cell; vertical-align: middle;'>
-			<p><img src="<?php echo base_url(); ?>assets/img/s_a_l.png" style='height: 25vh'></p>
+			<p><img src="<?php echo base_url(); ?>assets/img/s_a_l.png" style='height: 18vh'></p>
 			<p style='color: #FFF;'>DOCPRO Business Solutions</p>
-			<p id='loader-img'><img src="<?php echo base_url(); ?>assets/img/roll.png" style='height: 4vh'></p>
+			<p id='loader-img'><img src="<?php echo base_url(); ?>assets/img/ring-alt-3.png" style='height: 6vh'></p>
 		</div>
 	</div>
 	<div class='container'>
